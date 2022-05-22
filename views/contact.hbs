@@ -13,7 +13,7 @@
       <h4>You can\'t leave fields empty!</h4>
     </div>
   {{/if}}
-  <form action="/contact/send-message" method="POST">
+  <form action="/contact/send-message" method="POST" enctype="multipart/form-data">
     <label>
       Your name: <input type="text" name="author">
     </label>
@@ -22,6 +22,9 @@
     </label>
     <label>
       Title: <input type="text" name="title">
+    </label>
+     <label>
+      Project design:  <input type="file" name="uploadFile" accept=".png, .jpg, .jpeg .gif">
     </label>
     <label>
       Message: <textarea name="message"></textarea>
