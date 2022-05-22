@@ -1,0 +1,13 @@
+{
+  "name": "express_second_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "global": "^4.4.0",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.16"
+  }
+}
