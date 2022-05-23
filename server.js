@@ -3,9 +3,9 @@ const path = require('path');
 const hbs = require('express-handlebars');
 const app = express();
 const multer = require('multer');
-const upload = multer()
+const upload = multer();
 
-// app.engine('.hbs', hbs());
+app.engine('.hbs', hbs.engine());
 app.set('view engine', '.hbs');
 
 app.use(express.static(path.join(__dirname, '/public')));
